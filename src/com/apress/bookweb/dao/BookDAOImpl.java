@@ -30,10 +30,11 @@ public class BookDAOImpl implements BookDAO {
 		}
 	}
 	
+	//the database passwords have deliberately been marked out
 	private Connection getConnection() throws SQLException{
 		System.out.println("you are in the getConnection() method");
 		return DriverManager.getConnection("jdbc:mysql://localhost:3306/books",
-				"root", "root");	
+				"xxxx", "xxxx");	
 	}
 	
 	private void closeConnection(Connection connection){
